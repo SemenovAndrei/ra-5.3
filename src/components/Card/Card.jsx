@@ -31,6 +31,7 @@ const Button = styled.button`
   border-style: none;
   border-bottom: 1px dashed grey;
   background-color: inherit;
+  font-size: 1rem;
 `
 
 function Card(props) {
@@ -43,7 +44,7 @@ function Card(props) {
     <Container>
       <Title>{props.title}</Title>
       <Text className={props.hide ? 'collapse' : 'expand'}>{props.text}</Text>
-      <Button onClick={onToggle}>{props.hide ? 'Show ˅' : 'hide ˄'}</Button>
+      <Button onClick={onToggle}>{props.hide ? 'Show ˅' : 'Hide ˄'}</Button>
     </Container>
   )
 }
